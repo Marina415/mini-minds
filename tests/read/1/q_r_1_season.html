@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Тест</title>
+    <link rel="stylesheet" href="st_r_1.css">
+</head>
+<body>
+    <audio id="leto" src="audio/leto.mp3" preload="auto"></audio>
+    <audio id="zima" src="audio/zima.mp3" preload="auto"></audio>
+    <audio id="vesna" src="audio/vesna.mp3" preload="auto"></audio>
+    <div class="container">
+        <div class="head">
+            <div class="h1">Тест "Времена года"</div>
+            <div class="line"></div>
+
+            <p class="num">№1</p>
+            <p class="ex" id="ex1">Послушай, и отгадай загадку <input class="inp" type="text" id='z_1'></p>
+            <button class="listen" onclick="lstLeto();">Слушать</button>
+
+            <p class="num">№2</p>
+            <p class="ex" id="ex2">Послушай, и отгадай загадку <input class="inp" type=”text” id="z_2"></p>
+            <p><a class="listen" onclick="lstZima();">Слушать</a></p>
+
+            <p class="num">№3</p>
+            <p class="ex" id="ex3">Послушай, и отгадай загадку   <input class="inp" type=”text” id="z_3"></p>
+            <p><a class="listen" onclick="lstVesna();">Слушать</a></p>
+            
+            <button class="btnCheck" onclick="proverit();">Проверить</button>
+            <button class="showAnsw" onclick="showAnsw();">Посмотреть ответы</button>
+            <button class="close" onclick="closeTest();">Завершить тест</button>
+            <div class="rezultat" id="rezultat"></div>
+            <div class="answer" id="answer"></div>
+        </div>
+    </div>
+    <script>
+
+
+        var audioLeto = document.getElementById("leto");
+        var audioZima = document.getElementById("zima");
+        var audioVesna = document.getElementById("vesna");
+        
+
+        function lstLeto() {
+            audioLeto.play();
+        };
+        function lstZima() {
+            audioZima.play();
+        };
+        function lstVesna() {
+            audioVesna.play();
+        };
+
+
+        function proverit(){
+            
+        pr_otv_zadachi_1 = "лето";
+        pr_otv_zadachi_2 = "зима";
+        pr_otv_zadachi_3 = "весна";
+        
+        let otv_uch_1 = document.getElementById('z_1').value;
+        let otv_uch_2 = document.getElementById('z_2').value;
+        let otv_uch_3 = document.getElementById('z_3').value;
+        
+        // alert("otv_uch_1");
+        let ball = 0;
+        
+        if(otv_uch_1 == pr_otv_zadachi_1){
+            ball +=1;
+            let elem = document.getElementById('z_1')
+            elem.style.backgroundColor = "#EFF1A0";
+        }
+        else{
+            let elem = document.getElementById('z_1')
+            elem.style.backgroundColor = "#F6CFC3";
+        }
+        if(otv_uch_2 == pr_otv_zadachi_2){
+            ball +=1;
+            let elem = document.getElementById('z_2')
+            elem.style.backgroundColor = "#EFF1A0";
+        }
+        else{
+            let elem = document.getElementById('z_2')
+            elem.style.backgroundColor = "#F6CFC3";
+        }
+        if(otv_uch_3 == pr_otv_zadachi_3){
+            ball +=1;
+            let elem = document.getElementById('z_3')
+            elem.style.backgroundColor = "#EFF1A0";
+        }
+        else{
+            let elem = document.getElementById('z_3')
+            elem.style.backgroundColor = "#F6CFC3";
+        }
+      
+        document.getElementById('rezultat').innerHTML = "Правильных ответов: "+ball;
+        }
+        function showAnsw(){
+            document.getElementById('answer').innerHTML = "Ответы: " + pr_otv_zadachi_1 + ", " +pr_otv_zadachi_2 + ", "+pr_otv_zadachi_3;
+        }
+        function closeTest(){
+            document.location.href = "../../../world.html";
+        }
+        
+        </script>
+</body>
+</html>
