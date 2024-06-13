@@ -1,0 +1,131 @@
+@font-face { 
+    font-family: 'AristaPro'; 
+    src: url('../../Arista-Pro-Regular-trial.ttf'); 
+ }
+ @font-face { 
+    font-family: 'AristaProBold'; 
+    src: url('../../Arista-Pro-Alternate-SemiBold-trial.ttf'); 
+ }
+ @font-face { 
+    font-family: 'Montserrat-regular'; 
+    src: url('../../Montserrat Alternates/MontserratAlternates-Regular.ttf'); 
+ }
+ @font-face { 
+    font-family: 'Montserrat-medium'; 
+    src: url('../../Montserrat Alternates/MontserratAlternates-Medium.ttf'); 
+ }
+ @font-face { 
+    font-family: 'Montserrat-semibold'; 
+    src: url('../../Montserrat Alternates/MontserratAlternates-SemiBold.ttf'); 
+ }
+body {
+    background-color: #fcffefee;
+
+}
+.quiz button{
+    background-color: #E57E5B;
+}
+    .grid {
+    width: 68%;
+    height: 520px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px 50px 50px 50px;
+    border-radius: 20px;
+    border: 2px solid #C9CC0B;
+    border-style: dashed;
+    /* box-shadow: 10px 15px 5px #eaf3c4ee; */
+    }
+    .exit{
+        border-radius: 10px;
+        border: 0px;
+        background: #ff8c66;
+        color: #ffffff;
+        /* margin-top: 70px; */
+        height: 45px;
+        width: 200px;
+        font-size: 13pt;
+        display: block; 
+        margin: auto;
+        margin-bottom: 10px;
+        cursor: pointer;
+        font-family: Montserrat-regular;
+        float: right;
+     }
+     .exit:hover{
+        background-color: #ebed97;
+        color: #1D1D1D;
+     }
+    .buttons img
+    {
+    width:200px;
+    }
+    .grid h1 {
+    font-family: "Montserrat-semibold";
+    /* background-color: #ffc107; */
+    font-size: 35px;
+    text-align: center;
+    color: #E57E5B;
+    padding: 2px 0px;
+    border-radius: 50px;
+    }
+    hr
+    {
+    margin-top: 50px;
+        color: red;
+        background-color: #C9CC0B;
+        height: 2px;
+        border: none;
+    }
+    #score {
+    font-family: "Montserrat-medium";
+    color: #1D1D1D;
+    text-align: center;
+    font-size: 30px;
+    }
+    
+    .grid #question {
+    font-family: "Montserrat-regular";
+    font-size: 30px;
+    color: #1D1D1D;
+    }
+    
+    .buttons {
+    margin-top: 30px;
+    }
+    
+    #btn0,
+    #btn1,
+    #btn2,
+    #btn3 {
+    
+        padding: 0px;
+    font-size: 20px;
+    color: #fff;
+        border: none;
+    margin: 10px 20px 10px 0px;
+    
+    }
+    
+    #btn0:hover,
+    #btn1:hover,
+    #btn2:hover,
+    #btn3:hover {
+    cursor: pointer;
+    background-color: #E57E5B;
+    }
+    
+    #btn0:focus,
+    #btn1:focus,
+    #btn2:focus,
+    #btn3:focus {
+    outline: 0;
+    }
+    
+    #progress {
+    font-family: "Montserrat-regular";    
+    color: #1D1D1D;
+    font-size: 18px;
+    float: left;
+    }
+    
