@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Чтение</title>
+    <link rel="stylesheet" href="all_subjects.css">
+    <style>
+        .image{
+    width: 380px;
+    height: 370px;
+    background-image: url("images/read.png");
+    background-size:cover;
+    background-position: center;
+    float: right;
+    margin-right: 140px;
+  
+    
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo"></div>
+            <div  class="butt">
+                <p><a onclick="href='index.html'">Главная</a></p>
+                <p><a onclick="href='contacts.html'">Контакты</a></p>
+                <p><a onclick="href='subjects.html'">Направления</a></p>
+
+            </div>
+            <a href="tel:+7812324471" class="tel">+7 (812) 321-44-71</a> 
+        </div>
+        <div class="content">
+            <div class="h1">ЧТЕНИЕ</div>
+            <div class="info">
+                <div class="text">В блоке "Чтение" будут присутствовать следующие темы:</br></br>
+
+                    1. Знакомство с алфавитом</br>
+                    2. Развитие фонематического восприятия</br>
+                    3. Чтение простых слов и фраз</br>
+                    4. Развитие словарного запаса</br>
+                    5. Знакомство с литературой</div>
+                <div class="image"></div>
+            </div>
+            <div class="tasks">
+                <div class="toggler">
+                    <input type="checkbox" id="toggler__checkbox-id-1" class="toggler__checkbox">
+                    <label for="toggler__checkbox-id-1" class="toggler__label">Возраст 2-3 года</label>
+                    <span class="toggler__content-box">
+                        <div class="h2">Тесты</div>
+                        <p><a class="tests" href=''>Тест 1 “Буквы”</a></p>
+                    
+                    
+                        <div class="h2">Практичесткие задания</div>
+                        <p><a class="tests" href='tests/read/1/q_r_1_season.html'>Задание 1 “Времена года”</a></p>
+                    </span>
+                </div>
+            
+                <div class="toggler">
+                    <input type="checkbox" id="toggler__checkbox-id-2" class="toggler__checkbox">
+                    <label for="toggler__checkbox-id-2" class="toggler__label">Возраст 4-5 лет</label>
+                    <span class="toggler__content-box">
+                        <div class="h2">Тесты</div>
+                        <p><a class="tests" onclick="href='#advantages'">Тест 1 “Природные явления”</a></p>
+                    
+                        <div class="h2">Практичесткие задания</div>
+                        <p><a class="tests" onclick="href='#advantages'">Практика 1 </a></p>
+                    
+                    </span>
+                </div>
+
+                <div class="toggler">
+                    <input type="checkbox" id="toggler__checkbox-id-3" class="toggler__checkbox">
+                    <label for="toggler__checkbox-id-3" class="toggler__label">Возраст 6-7 лет</label>
+                    <span class="toggler__content-box">
+                        <div class="h2">Тесты</div>
+                        <p><a class="tests" onclick="href='#advantages'">Тест 1 “Природные явления”</a></p>
+                    
+                        <div class="h2">Практичесткие задания</div>
+                        <p><a class="tests" onclick="href='#advantages'">Практика 1 </a></p>
+                    
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
