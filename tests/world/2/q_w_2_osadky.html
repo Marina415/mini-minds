@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Тест</title>
+    <link rel="stylesheet" href="st_w_2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <div class="h1">Тест "Природные явления"</div>
+            <div class="line"></div>
+            <p class="num">№1</p>
+            <p class="ex" id="ex1">Что выпадает зимой? <input class="inp" type="text" id='z_1'></p>
+            <p class="num">№2</p>
+            <p class="ex" id="ex2">Что капает с неба осенью? <input class="inp" type=”text” id="z_2"></p>
+            <p class="num">№3</p>
+            <p class="ex" id="ex3">Что появляется на деревьях весной?  <input class="inp" type=”text” id="z_3"></p>
+            
+            <!-- <p><input class="btnCheck" type="button" value="Проверить" ></p> -->
+            <button class="btnCheck" onclick="proverit();">Проверить</button>
+            <button class="showAnsw" onclick="showAnsw();">Посмотреть ответы</button>
+            <button class="close" onclick="closeTest();">Завершить тест</button>
+            <div class="rezultat" id="rezultat"></div>
+            <div class="answer" id="answer"></div>
+        </div>
+    </div>
+    <script>
+        function proverit(){
+            
+        pr_otv_zadachi_1 = "снег";
+        pr_otv_zadachi_2 = "дождь";
+        pr_otv_zadachi_3 = "листья";
+        
+        let otv_uch_1 = document.getElementById('z_1').value;
+        let otv_uch_2 = document.getElementById('z_2').value;
+        let otv_uch_3 = document.getElementById('z_3').value;
+        
+        // alert("otv_uch_1");
+        let ball = 0;
+        
+        if(otv_uch_1 == pr_otv_zadachi_1){
+            ball +=1;
+            let elem = document.getElementById('z_1')
+            elem.style.backgroundColor = "#EFF1A0";
+        }
+        else{
+            let elem = document.getElementById('z_1')
+            elem.style.backgroundColor = "#F6CFC3";
+        }
+        if(otv_uch_2 == pr_otv_zadachi_2){
+            ball +=1;
+            let elem = document.getElementById('z_2')
+            elem.style.backgroundColor = "#EFF1A0";
+        }
+        else{
+            let elem = document.getElementById('z_2')
+            elem.style.backgroundColor = "#F6CFC3";
+        }
+        if(otv_uch_3 == pr_otv_zadachi_3){
+            ball +=1;
+            let elem = document.getElementById('z_3')
+            elem.style.backgroundColor = "#EFF1A0";
+        }
+        else{
+            let elem = document.getElementById('z_3')
+            elem.style.backgroundColor = "#F6CFC3";
+        }
+      
+        document.getElementById('rezultat').innerHTML = "Правильных ответов: "+ball;
+        }
+        function showAnsw(){
+            document.getElementById('answer').innerHTML = "Ответы: " + pr_otv_zadachi_1 + ", " +pr_otv_zadachi_2 + ", "+pr_otv_zadachi_3;
+        }
+        function closeTest(){
+            document.location.href = "../../../world.html";
+        }
+        
+        </script>
+</body>
+</html>
