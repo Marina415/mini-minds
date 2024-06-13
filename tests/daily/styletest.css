@@ -1,0 +1,145 @@
+@font-face { 
+   font-family: 'AristaPro'; 
+   src: url('../Arista-Pro-Regular-trial.ttf'); 
+}
+@font-face { 
+   font-family: 'AristaProBold'; 
+   src: url('../Arista-Pro-Alternate-SemiBold-trial.ttf'); 
+}
+@font-face { 
+   font-family: 'Montserrat-regular'; 
+   src: url('../Montserrat Alternates/MontserratAlternates-Regular.ttf'); 
+}
+@font-face { 
+   font-family: 'Montserrat-medium'; 
+   src: url('../Montserrat Alternates/MontserratAlternates-Medium.ttf'); 
+}
+@font-face { 
+   font-family: 'Montserrat-semibold'; 
+   src: url('../Montserrat Alternates/MontserratAlternates-SemiBold.ttf'); 
+}
+body, html
+{
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   font-size: 16px;
+   font-family: helvetica, arial;
+   color: #111; 
+}
+ 
+.wrapper
+{
+   width: 100%;
+   height: 100%;
+   display: table;
+   background-image: url("fon.jpg");
+   background-size:cover;
+   background-position: bottom;
+}
+ 
+.main
+{
+   margin-top: 50px;
+   padding-top: 50px;
+   text-align: center;
+   width: 700px;
+   height: 570px;
+   border-radius: 20px;
+   border: 2px dashed #C9CC0B;
+   background-color: #ffffff;
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%);
+}
+ 
+.quiz-frame
+{
+   border: 0;
+   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+ 
+.quiz__head
+{
+   font-size: 20pt;
+   margin: 10px;
+   margin-bottom: 50px;
+}
+.tit{
+   font-family: Montserrat-medium;
+   font-size: 26px;
+   margin-bottom: 40px;
+   color:#E57E5B;
+}
+.head__content
+{
+   padding: 5px;
+   font-family: Montserrat-regular;
+   font-size: 18px;
+}
+ 
+.quiz__body
+{
+   margin: 10px;
+}
+ 
+.quiz__footer
+{
+   font-family: Montserrat-regular;
+   position: absolute;
+   bottom: 0;
+   display: block;
+   width: 100%;
+   margin-bottom: 15px;
+}
+.exit{
+   border-radius: 10px;
+   border: 0px;
+   background: #ff8c66;
+   color: #ffffff;
+   padding: 10px 0px;
+   width: 250px;
+   font-size: 15pt;
+   display: block;
+   margin: auto;
+   margin-bottom: 10px;
+   cursor: pointer;
+   font-family: Montserrat-regular;
+}
+.footer__content
+{
+   padding: 5px;
+}
+ 
+.button
+{
+   border: 0;
+   border-radius: 10px;
+   background: #ebed97;
+   color: #232323;
+   padding: 10px 25px;
+   width: 70%;
+   font-size: 12pt;
+   display: block;
+   margin: 2px auto;
+   margin-bottom: 10px;
+   cursor: pointer;
+   font-family: Montserrat-regular;
+}
+ 
+.button_wrong
+{
+   background: #F6CFC3;
+}
+ 
+.button_correct
+{
+   background: #C7F6C3;
+}
+ 
+.button_passive
+{
+   background: #c6c6c6;
+}
