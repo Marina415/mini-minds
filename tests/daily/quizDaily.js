@@ -154,52 +154,31 @@ const questions =
 		new Answer("Хомячок", 0),
 	]),
 
-	new Question("2 * 2 = ", 
+	new Question("Кто дает молоко?", 
 	[
-		new Answer("2", 0),
-		new Answer("3", 0),
-		new Answer("4", 1),
-		new Answer("0", 0)
-	]),
-
-	new Question("2 / 2 = ", 
-	[
-		new Answer("0", 0),
-		new Answer("1", 1),
-		new Answer("2", 0),
-		new Answer("3", 0)
-	]),
-
-	new Question("2 - 2 = ", 
-	[
-		new Answer("0", 1),
-		new Answer("1", 0),
-		new Answer("2", 0),
-		new Answer("3", 0)
-	]),
-
-	new Question("2 + 2 * 2 = ", 
-	[
-		new Answer("4", 0),
-		new Answer("6", 1),
-		new Answer("8", 0),
-		new Answer("10", 0)
-	]),
-
-	new Question("2 + 2 / 2 = ", 
-	[
-		new Answer("1", 0),
-		new Answer("2", 0),
-		new Answer("3", 1),
-		new Answer("4", 0)
-	]),
-    new Question("Кто дает молоко?", 
-	[
-		new Answer("Корова", 1),
 		new Answer("Собака", 0),
-		new Answer("Попугай", 0),
-		new Answer("Змея", 0)
-	])
+		new Answer("Змея", 0),
+		new Answer("Корова", 1),
+		new Answer("Лев", 0)
+	]),
+
+	new Question("Кто живет в лесу ", 
+	[
+		new Answer("Коза", 0),
+		new Answer("Медведь", 1),
+		new Answer("Гусь", 0),
+		new Answer("Бык", 0)
+	]),
+
+	new Question("У кого шубка рыжего цвета?", 
+	[
+		new Answer("Лиса", 1),
+		new Answer("Заяц", 0),
+		new Answer("Волк", 0),
+		new Answer("Кролик", 0)
+	]),
+
+	
 ];
 
 //Сам тест
